@@ -1,9 +1,5 @@
 <?php
-
-use Illuminate\Support\Facades\Route;
-
-use App\Http\Models\Movie;
-
+use App\Http\Controllers\PageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +10,4 @@ use App\Http\Models\Movie;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', [Movie :: class, 'index']);
+Route::get('/', [PageController::class, 'index']);
